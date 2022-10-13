@@ -19,5 +19,5 @@ jobs:
             distribution: 'adopt'
             cache: maven
         - run: mvn test-compile -pl ${{ github.event.repository.name }} -am
-        - run: mvn -pl ${{ github.event.repository.name }} test -Dtest=com.baidu.jprotobuf.pbrpc.EchoServiceTest#testDynamiceTalkTimeout  
-        - run: mvn -pl ${{ github.event.repository.name }} edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.baidu.jprotobuf.pbrpc.EchoServiceTest#testDynamiceTalkTimeout 
+        - run: mvn -pl ${{ github.event.repository.name }} test -Dtest=org.apache.ignite.internal.storage.ConcurrentHashMapStorageTest#testRemoveAllExact  
+        - run: mvn -pl ${{ github.event.repository.name }} edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=org.apache.ignite.internal.storage.ConcurrentHashMapStorageTest#testRemoveAllExact
